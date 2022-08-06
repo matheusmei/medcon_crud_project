@@ -5,7 +5,7 @@ import android.content.Context
 object DataStore {
 
     var medicines: MutableList<Medication> = arrayListOf()
-        private set
+
 
     private var myContext: Context? = null
 

@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Medicon_crud_project"
         tools:targetApi="31">
         <activity
-            android:name=".controller.AddMedicationActivity1"
+            android:name=".controller.AddMedicationActivity"
             android:exported="false" />
         <activity
             android:name=".controller.MainActivity"
