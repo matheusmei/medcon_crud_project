@@ -31,7 +31,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar)
+        toolbar.title = "MEDICON"
+//        setSupportActionBar(toolbar)
+//        setSupportActionBar(toolbar)
 
         val layoutMain = findViewById<CoordinatorLayout>(R.id.layoutMain)
         val fab = findViewById<FloatingActionButton>(R.id.fab)
