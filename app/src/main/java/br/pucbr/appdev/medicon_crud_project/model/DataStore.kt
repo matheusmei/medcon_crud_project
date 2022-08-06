@@ -2,7 +2,7 @@ package br.pucbr.appdev.medicon_crud_project.model
 
 import android.content.Context
 
-class DataStore {
+object DataStore {
 
     var medicines: MutableList<Medication> = arrayListOf()
         private set

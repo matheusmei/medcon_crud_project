@@ -11,7 +11,7 @@ import br.pucbr.appdev.medicon_crud_project.model.Medication
 
 class AddMedicationActivity1 : AppCompatActivity() {
     var position = -1
-    var medicine = Medication(name, dosage, frequency, clinicalIndication)
+    var medicine = Medication("","", "","")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

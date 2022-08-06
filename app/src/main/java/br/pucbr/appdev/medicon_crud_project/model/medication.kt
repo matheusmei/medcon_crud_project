@@ -7,10 +7,13 @@ class Medication(
     var clinicalIndication: String
         ) {
 
+    var id: Long =0
+
+    }
 
 
 
 
 
-}
+
 
