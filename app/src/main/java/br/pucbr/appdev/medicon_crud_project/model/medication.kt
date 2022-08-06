@@ -1,14 +1,19 @@
 package br.pucbr.appdev.medicon_crud_project.model
 
-class Medication (
+class Medication(
     var name: String,
     var dosage: String,
     var frequency: String,
     var clinicalIndication: String
         ) {
 
+    var id: Long =0
+
+    }
 
 
 
-}
+
+
+
 

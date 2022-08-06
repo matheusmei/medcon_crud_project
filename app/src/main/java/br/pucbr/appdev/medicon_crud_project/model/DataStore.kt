@@ -2,7 +2,7 @@ package br.pucbr.appdev.medicon_crud_project.model
 
 import android.content.Context
 
-class DataStore {
+object DataStore {
 
     var medicines: MutableList<Medication> = arrayListOf()
         private set
@@ -13,23 +13,20 @@ class DataStore {
         myContext = value
     }
 
-    init {
-
-    }
 
     fun getMedication(position: Int): Medication {
         return medicines.get(position)
     }
 
-    fun addMedication(medication: Medication){
+    fun addMedication(medication: Medication) {
         medicines.add(medication)
     }
 
-    fun editMedication(medication: Medication, position: Int){
+    fun editMedication(medication: Medication, position: Int) {
         medicines.set(position, medication)
     }
 
-    fun removeMedication(position: Int){
+    fun removeMedication(position: Int) {
         medicines.removeAt(position)
     }
 
