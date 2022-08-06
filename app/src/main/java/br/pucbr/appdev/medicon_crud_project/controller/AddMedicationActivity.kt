@@ -1,7 +1,6 @@
 package br.pucbr.appdev.medicon_crud_project.controller
 
 import android.content.Intent
-import android.graphics.Insets.add
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -12,9 +11,9 @@ import br.pucbr.appdev.medicon_crud_project.model.banco.AppDatabase
 
 
 class AddMedicationActivity : AppCompatActivity() {
-    var position = -1
+//    var position = -1
 //    var medicine = Medication("","", "","")
-    private lateinit var userDao: InterfaceDao
+    private lateinit var userDao: BancoDao
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_medication1)

@@ -6,7 +6,8 @@ import androidx.room.Query
 import androidx.room.Update
 import br.pucbr.appdev.medicon_crud_project.model.Medication
 
-interface InterfaceDao {
+
+interface BancoDao {
 
     @Query("SELECT * FROM Medication")
     fun buscarDados(): List<Medication>

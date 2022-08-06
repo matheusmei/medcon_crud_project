@@ -4,17 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
-import androidx.recyclerview.widget.RecyclerView
 import br.pucbr.appdev.medicon_crud_project.R
+import br.pucbr.appdev.medicon_crud_project.model.DataStore
 import br.pucbr.appdev.medicon_crud_project.model.banco.AppDatabase
 
 import br.pucbr.appdev.medicon_crud_project.view.MedicationAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    private var adapter: MedicationAdapter? = null
-    private var rcvMedicines: RecyclerView? = null
-    private lateinit var userDao: InterfaceDao
+//    private var adapter: MedicationAdapter? = null
+//    private var rcvMedicines: RecyclerView? = null
+    private lateinit var userDao: BancoDao
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val db = AppDatabase.instancia(this)
         userDao = db.userDao()
+        DataStore.medicines = userDao.buscarDados().toMutableList()
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         toolbar.title = "MEDICON"
 //        setSupportActionBar(toolbar)
