@@ -8,7 +8,8 @@ import android.widget.Button
 import android.widget.EditText
 import br.pucbr.appdev.medicon_crud_project.R
 import br.pucbr.appdev.medicon_crud_project.model.Medication
-import br.pucbr.appdev.medicon_crud_project.model.banco.AppDataBase
+import br.pucbr.appdev.medicon_crud_project.model.banco.AppDatabase
+
 
 class AddMedicationActivity : AppCompatActivity() {
     var position = -1
@@ -54,7 +55,7 @@ class AddMedicationActivity : AppCompatActivity() {
 //            finish()
 //        }
 
-        val db = AppDataBase.instancia(this)
+        val db = AppDatabase.instancia(this)
         userDao = db.userDao()
         botoes(btnSave)
 

@@ -6,7 +6,8 @@ import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.RecyclerView
 import br.pucbr.appdev.medicon_crud_project.R
-import br.pucbr.appdev.medicon_crud_project.model.banco.AppDataBase
+import br.pucbr.appdev.medicon_crud_project.model.banco.AppDatabase
+
 import br.pucbr.appdev.medicon_crud_project.view.MedicationAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val db = AppDataBase.instancia(this)
+        val db = AppDatabase.instancia(this)
         userDao = db.userDao()
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         toolbar.title = "MEDICON"
