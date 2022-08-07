@@ -1,4 +1,4 @@
-package br.pucbr.appdev.medicon_crud_project
+package br.edu.pucpr.matheus.medicon
 
 import org.junit.Test
 

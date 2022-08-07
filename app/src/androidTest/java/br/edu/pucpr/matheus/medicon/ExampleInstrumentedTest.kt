@@ -1,4 +1,4 @@
-package br.pucbr.appdev.medicon_crud_project
+package br.edu.pucpr.matheus.medicon
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("br.pucbr.appdev.medicon_crud_project", appContext.packageName)
+        assertEquals("br.edu.pucpr.matheus.medicon", appContext.packageName)
     }
 }
