@@ -9,6 +9,7 @@ import br.edu.pucpr.matheus.medicon.controller.BancoDao
 import br.edu.pucpr.matheus.medicon.model.AppDatabase
 import br.edu.pucpr.matheus.medicon.model.DataStore
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.card_medication_view.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var userDao: BancoDao
@@ -16,8 +17,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val db = AppDatabase.instancia(this)
+
         userDao = db.userMediconDao()
         DataStore.medicines = userDao.buscarDados().toMutableList()
+
 //        val toolbar = findViewById<Toolbar>(R.id.toolbar)
 //        toolbar.title = "MEDICON"
         fab.setOnClickListener {

@@ -70,12 +70,15 @@
             android:layout_height="wrap_content"
             android:text="Dosagem: "
             android:textSize="20sp"
+            android:layout_marginStart="10dp"
+
             android:layout_marginRight="10dp"/>
 
         <EditText
             android:id="@+id/txtDosage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
             android:inputType="text"
             android:maxLength="4"
             />
@@ -99,7 +102,7 @@
             android:id="@+id/txtFrequency"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="text"/>
 
     </LinearLayout>
 
@@ -120,7 +123,7 @@
             android:id="@+id/txtClinicalIndication"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="text"/>
 
     </LinearLayout>
 
