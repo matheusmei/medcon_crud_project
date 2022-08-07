@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-class Medication(
+data class Medication(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
     var name: String,

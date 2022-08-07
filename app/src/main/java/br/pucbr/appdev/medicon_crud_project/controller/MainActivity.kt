@@ -6,9 +6,8 @@ import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import br.pucbr.appdev.medicon_crud_project.R
 import br.pucbr.appdev.medicon_crud_project.model.DataStore
-import br.pucbr.appdev.medicon_crud_project.model.banco.AppDatabase
+import br.pucbr.appdev.medicon_crud_project.model.AppDatabase
 
-import br.pucbr.appdev.medicon_crud_project.view.MedicationAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

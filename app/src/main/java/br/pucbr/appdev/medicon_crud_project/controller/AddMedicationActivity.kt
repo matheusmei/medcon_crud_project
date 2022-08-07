@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import br.pucbr.appdev.medicon_crud_project.R
 import br.pucbr.appdev.medicon_crud_project.model.Medication
-import br.pucbr.appdev.medicon_crud_project.model.banco.AppDatabase
+import br.pucbr.appdev.medicon_crud_project.model.AppDatabase
 
 
 class AddMedicationActivity : AppCompatActivity() {

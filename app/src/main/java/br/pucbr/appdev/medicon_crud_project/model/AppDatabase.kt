@@ -1,4 +1,4 @@
-package br.pucbr.appdev.medicon_crud_project.model.banco
+package br.pucbr.appdev.medicon_crud_project.model
 
 import android.content.Context
 import androidx.room.Database
@@ -7,7 +7,6 @@ import androidx.room.RoomDatabase
 
 
 import br.pucbr.appdev.medicon_crud_project.controller.BancoDao
-import br.pucbr.appdev.medicon_crud_project.model.Medication
 
 @Database(entities = [Medication::class], version = 1)
 abstract class AppDatabase : RoomDatabase(){
