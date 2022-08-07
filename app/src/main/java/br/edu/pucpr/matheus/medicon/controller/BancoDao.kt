@@ -1,6 +1,7 @@
 package br.edu.pucpr.matheus.medicon.controller
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import br.edu.pucpr.matheus.medicon.model.UserMedication
@@ -13,8 +14,8 @@ interface BancoDao {
     @Insert
     fun salvaDados(vararg UserMedication: UserMedication)
 //
-//    @Delete
-//    fun delete(vararg dadosUser: Medication)
+    @Delete
+    fun deleteDados(vararg UserMedication: UserMedication)
 //
 //    @Update
 //    fun alterarDados(dadosUser: Medication)

@@ -18,11 +18,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary" />
+                android:background="@color/appBar"
+                android:foregroundTint="#54BAB9" />
             <include
                 android:id="@+id/headerView"
                 layout="@layout/header_simple"/>
@@ -33,10 +35,11 @@
         android:layout_height="wrap_content"
         android:text="Cadastro / Edição de Medicamento"
         android:textSize="25sp"
+        android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
-        android:textColor="#0000AA"/>
+        android:textColor="#6E85B7"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,6 +52,7 @@
             android:layout_marginStart="10dp"
             android:text="Medicamento: "
             android:textSize="20sp"
+            android:textColor="#6E85B7"
             android:layout_marginRight="10dp"/>
 
         <EditText
@@ -69,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dosagem: "
+            android:textColor="#6E85B7"
             android:textSize="20sp"
             android:layout_marginStart="10dp"
 
@@ -94,13 +99,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="Frequência: "
+            android:textColor="#6E85B7"
             android:textSize="20sp"
             android:layout_marginRight="10dp"/>
 
         <EditText
             android:id="@+id/txtFrequency"
             android:layout_width="match_parent"
+            android:layout_marginEnd="10dp"
             android:layout_height="wrap_content"
             android:inputType="text"/>
 
@@ -114,13 +122,16 @@
 
         <TextView
             android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_height="wrap_content"
             android:text="Indicação Clínica: "
+            android:textColor="#6E85B7"
             android:textSize="20sp"
             android:layout_marginRight="10dp"/>
 
         <EditText
             android:id="@+id/txtClinicalIndication"
+            android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"/>
@@ -138,14 +149,17 @@
             android:id="@+id/btnSave"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="Salvar"/>
+
+            android:backgroundTint="#54BAB9"
+            android:text="Salvar" />
 
         <Button
             android:id="@+id/btnCancel"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="Cancelar"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#54BAB9"
+            android:text="Cancelar" />
 
     </LinearLayout>
 
